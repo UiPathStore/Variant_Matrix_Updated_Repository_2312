@@ -1,0 +1,15 @@
+{
+  "Value": {
+    "VM_Var02_Add ExistingVariantToPLUsingSearchTabInAddPanel.xaml": [
+      {
+        "IsEnabled": true,
+        "Annotation": null,
+        "Id": "571a7ee4-d662-4e63-b563-6c2d217e23ff",
+        "ActivityIdRef": "Sequence_2",
+        "ActivityId": "1.9",
+        "ActivityName": "Do",
+        "IsTransient": false
+      }
+    ]
+  }
+}

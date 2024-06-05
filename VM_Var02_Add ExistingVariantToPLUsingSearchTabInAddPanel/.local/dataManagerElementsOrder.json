@@ -1,0 +1,49 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "VM_Var02_Add existing Variant to Product Line using  Search Tab in Add Panel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dateee&Sequence_2",
+        "in_PL_ID&Sequence_2",
+        "gty&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AWC_Workflows/AWC_Login_Flow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "url&Sequence_1",
+        "is_LoginWindowappeared&Sequence_2",
+        "isLoggedIn&Sequence_2",
+        "isLoggedIn&Sequence_3",
+        "is_LoginWindowappeared&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Open_Product_Line.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dateee&Sequence_2",
+        "inDate&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
