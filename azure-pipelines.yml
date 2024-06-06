@@ -1,0 +1,20 @@
+
+
+pool:
+  uipath
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Edit Matrix table_01_02_03_CombinedOperations/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Deleting Ouput folder'
