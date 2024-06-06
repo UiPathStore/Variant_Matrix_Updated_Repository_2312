@@ -1,12 +1,16 @@
 
-
+trigger:
+- main
+ 
 pool:
   uipath
-
+ 
+steps:
+ 
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_Edit Matrix table_01_02_03_CombinedOperations/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions01_SaveAsOpertaionOnSourceVariant/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -17,4 +21,4 @@ pool:
 
 - script: |
    del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
-  displayName: 'Deleting Ouput folder'
+  displayName: 'Create Required output folder'
