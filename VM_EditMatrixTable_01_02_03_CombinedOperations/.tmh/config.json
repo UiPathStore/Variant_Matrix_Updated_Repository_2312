@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/dev_rpa_automations/defaulttenant/testmanager_",
+  "defaultProject": {
+    "id": "46483976-2133-0000-81d8-0b46a240e217",
+    "name": "VariantMatix_Project",
+    "key": "VARIANTMATIX"
+  }
+}
