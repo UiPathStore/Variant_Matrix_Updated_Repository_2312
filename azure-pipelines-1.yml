@@ -15,5 +15,5 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath'
-    testSet: 'VariantMatrix01'
+    testSet: 'VariantMatrix02'
     folderName: 'Variant_Matrix_Automations'
