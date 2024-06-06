@@ -44,6 +44,18 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "VM_Var02_Add ExistingVariantToPLUsingSearchTabInAddPanel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "in_PL_ID&Sequence_2",
+        "gty&Sequence_2",
+        "dateee&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
