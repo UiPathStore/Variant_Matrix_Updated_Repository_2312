@@ -186,7 +186,7 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_Substitute_01_AssignSubstituteBOMItemsoForSelectedVariantBOMItemPaletteTab/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Substitute_01_AssignSubstituteBOMItemsforSelectedVariantBOMItemPaletteTab/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
