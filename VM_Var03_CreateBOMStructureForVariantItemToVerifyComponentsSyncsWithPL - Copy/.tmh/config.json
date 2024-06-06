@@ -1,9 +1,0 @@
-{
-  "issueKeyTestcaseValues": {},
-  "testManagerBasePath": "https://cloud.uipath.com/rutikadhamane/defaulttenant/testmanager_/",
-  "defaultProject": {
-    "id": "3298d79e-6437-0000-c218-0b46d860fef9",
-    "name": "Variant_Matrix",
-    "key": "VAM"
-  }
-}
