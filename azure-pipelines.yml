@@ -10,7 +10,359 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_PL01_CreateNewProductLineItem/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions01_SaveAsOpertaionOnSourceVariant/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions02_SelectVariantInMatrixtable/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions03_OpenVariantfromMatrixTable/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions04_and_05_CreateNewVariantFromMatrixTableAndDeleteFromPL/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions06_CopyPasteOperationFromSourceToTargetVariant/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions07_PerformBOMOverlapOnSelectedVariant/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_PL05_PositionOfVariantMatrixTabOnUI/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_EditMatrixTable_01_02_03_CombinedOperations/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Filter01_FilterVariantsinBOMMatrix/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Filter01_SearchORFilterPartsInBOMMatrix/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Filter02_FilterVariantsInBOMMatrix/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_MatCon01_ExportBOMMatrixTable/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_MatCon02_AlphanumericSortingofPartonPLInAscendingOrder/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_MatCon02_AlphanumericSortingofPartonPLInDescendingOrder/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_MatCon03_DisplayThePartsWhichAreConsumedOnVariants/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_MatCon04_ResetVariantMatrix/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_MatCon05_ValidateOverlappingBOMVariants/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Module01_AddNewModuleORProductLineToTheProductLine/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Module02_AddExistingModuleORProductLinetoTheProductLine/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Module03_AddVariantsofModuleORPLtoParentProductLine/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Part01_AddNewParttoPLUsingNewTabinAddPanel/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Part02_AddExistingPartusingAdvanceSearch/project.json'
+    orchestratorConnection: 'Uipath'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Uipath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
+    folderName: 'Variant_Matrix_Automations'
+
+- script: |
+   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
+  displayName: 'Delete output folder'
+
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Part02_AddExistingPartUsingPaletteTab/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -138,39 +490,7 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_Module01_AddNewModuleORProductLineToTheProductLine/project.json'
-    orchestratorConnection: 'Uipath'
-    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
-- task: UiPathDeploy@4
-  inputs:
-    orchestratorConnection: 'Uipath'
-    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
-    folderName: 'Variant_Matrix_Automations'
-
-- script: |
-   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
-  displayName: 'Delete output folder'
-
-- task: UiPathPack@4
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_Module02_AddExistingModuleORProductLinetoTheProductLine/project.json'
-    orchestratorConnection: 'Uipath'
-    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
-- task: UiPathDeploy@4
-  inputs:
-    orchestratorConnection: 'Uipath'
-    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
-    folderName: 'Variant_Matrix_Automations'
-
-- script: |
-   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
-  displayName: 'Delete output folder'
-
-- task: UiPathPack@4
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_Module03_AddVariantsofModuleORPLtoParentProductLine/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Substitute_01_AssignSubstituteBOMItemsForSelectedVariantBOMItemSearchTab/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -187,22 +507,6 @@ steps:
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)/VM_Substitute_01_AssignSubstituteBOMItemsforSelectedVariantBOMItemPaletteTab/project.json'
-    orchestratorConnection: 'Uipath'
-    outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
-- task: UiPathDeploy@4
-  inputs:
-    orchestratorConnection: 'Uipath'
-    packagesPath: '$(Build.ArtifactStagingDirectory)/Output/'
-    folderName: 'Variant_Matrix_Automations'
-
-- script: |
-   del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
-  displayName: 'Delete output folder'
-
-- task: UiPathPack@4
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_Substitute_01_AssignSubstituteBOMItemsForSelectedVariantBOMItemSearchTab/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -250,7 +554,7 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_Substitute_04_Show BOMItemSubstitutesForSelectedParts/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Substitute_04_ShowBOMItemSubstitutesForSelectedParts/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -298,7 +602,7 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions01_SaveAsOpertaionOnSourceVariant/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Var01_AddNewVariantToPLUsingNewTabInAddPanel/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -314,7 +618,7 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions02_SelectVariantInMatrixtable/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Var02_Add ExistingVariantToPLUsingSearchTabInAddPanel/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -330,7 +634,7 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)/VM_ColumnOpertaions03_OpenVariantFromMatrixTable/project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)/VM_Var03_CreateBOMStructureForVariantItemToVerifyComponentsSyncsWithPL/project.json'
     orchestratorConnection: 'Uipath'
     outputPath: '$(Build.ArtifactStagingDirectory)/Output/'
 - task: UiPathDeploy@4
@@ -342,4 +646,5 @@ steps:
 - script: |
    del /S "$(Build.ArtifactStagingDirectory)\Output\*.nupkg"
   displayName: 'Delete output folder'
+
 
