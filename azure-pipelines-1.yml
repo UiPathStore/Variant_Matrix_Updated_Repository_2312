@@ -1,19 +1,25 @@
 
+
+variables:
+  orchestratorConnection: 'Uipath'
+  folderName: 'Variant_Matrix_Automations'
+
+parameters:
+  - name: testSet
+    displayName: Test Set Name
+    type: string
+    default: 'VariantMatrix02'
+    values:
+      - VariantMatrix01
+      - VariantMatrix02
+
 pool:
   uipath
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
 - task: UiPathTest@4
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'Uipath'
-    testSet: 'VariantMatrix02'
-    folderName: 'Variant_Matrix_Automations'
+    orchestratorConnection: $(orchestratorConnection)
+    testSet: ${{ parameters.testSet }}
+    folderName: $(folderName)
